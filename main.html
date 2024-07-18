@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("a2.jpg"); /* Add your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #player {
+
+            text-align: left;
+            padding: 25px;
+            padding-left:12px;
+            padding-right:12px;
+            background-color: rgba(31, 21, 135, 0.637); /* Adjust background color opacity */
+            border: 1px solid #3c086da8;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(237, 233, 233, 0.748);
+            max-width: 400px;
+            width: 90%;
+            box-sizing: border-box;
+            -moz-box-align:start;
+            margin-top:90px;
+            margin-left: 5px;
+            margin-right: 750px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color:rgba(135, 171, 237, 0.614)
+        }
+
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: #1DB954;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        button:hover {
+            background-color: #1ed760;
+        }
+
+        /* Styling for play and pause buttons */
+        .play::before {
+            content: "▶"; /* Play icon */
+        }
+
+        .pause::before {
+            content: "II"; /* Pause icon */
+        }
+
+        .playCount {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position: absolute; left: 20px; top: 20px; color: #fff;">User Dashboard</h1>
+    <div id="player">
+        <h2>MURDER IN MIND (PHONK)</h2>
+        <audio id="audio1" controls>
+            <source src="A1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio1"></button>
+            <button class="pause" data-audio="audio1"></button>
+            <button class="increaseVolume" data-audio="audio1">+</button>
+            <button class="decreaseVolume" data-audio="audio1">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+        <h2>BELIVER</h2>
+        <audio id="audio2" controls>
+            <source src="A2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio2"></button>
+            <button class="pause" data-audio="audio2"></button>
+            <button class="increaseVolume" data-audio="audio2">+</button>
+            <button class="decreaseVolume" data-audio="audio2">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>ON MY WAY</h2>
+        <audio id="audio3" controls>
+            <source src="A3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio3"></button>
+            <button class="pause" data-audio="audio3"></button>
+            <button class="increaseVolume" data-audio="audio3">+</button>
+            <button class="decreaseVolume" data-audio="audio3">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>HEAT waves</h2>
+        <audio id="audio4" controls>
+            <source src="Heat waves.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio4"></button>
+            <button class="pause" data-audio="audio4"></button>
+            <button class="increaseVolume" data-audio="audio4">+</button>
+            <button class="decreaseVolume" data-audio="audio4">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>Alone Pt II</h2>
+        <audio id="audio5" controls>
+            <source src="yt1s.com - Alan Walker  Ava Max  Alone Pt II.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio5"></button>
+            <button class="pause" data-audio="audio5"></button>
+            <button class="increaseVolume" data-audio="audio5">+</button>
+            <button class="decreaseVolume" data-audio="audio5">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>Cartoon on on</h2>
+        <audio id="audio6" controls>
+            <source src="yt1s.com - Cartoon  On  On feat Daniel Levi  NCS  Copyright Free Music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio6"></button>
+            <button class="pause" data-audio="audio6"></button>
+            <button class="increaseVolume" data-audio="audio6">+</button>
+            <button class="decreaseVolume" data-audio="audio6">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>Let Me Love You</h2>
+        <audio id="audio7" controls>
+            <source src="yt1s.com - DJ Snake ft Justin Bieber  Let Me Love You Lyric Video (1).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio7"></button>
+            <button class="pause" data-audio="audio7"></button>
+            <button class="increaseVolume" data-audio="audio7">+</button>
+            <button class="decreaseVolume" data-audio="audio7">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+
+        <h2>Naa Driver Ni Nann Lover</h2>
+        <audio id="audio8" controls>
+            <source src="yt1s.com - ನ ಡರವರ ನ ನನನ ಲವರ   Naa Driver Ni Nann Lover  Malu Nipanal Janapada Video Song  Pooja DKD.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio8"></button>
+            <button class="pause" data-audio="audio8"></button>
+            <button class="increaseVolume" data-audio="audio8">+</button>
+            <button class="decreaseVolume" data-audio="audio8">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+        
+        <h2>Khairiyat Bonus Track</h2>
+        <audio id="audio9" controls>
+            <source src="Khairiyat Bonus Track.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio9"></button>
+            <button class="pause" data-audio="audio9"></button>
+            <button class="increaseVolume" data-audio="audio9">+</button>
+            <button class="decreaseVolume" data-audio="audio9">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+        <h2>HUKUM</h2>
+        <audio id="audio10" controls>
+            <source src="AI.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio10"></button>
+            <button class="pause" data-audio="audio10"></button>
+            <button class="increaseVolume" data-audio="audio10">+</button>
+            <button class="decreaseVolume" data-audio="audio10">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+        <h2>THUNDER</h2>
+        <audio id="audio11" controls>
+            <source src="AB.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="play" data-audio="audio11"></button>
+            <button class="pause" data-audio="audio11"></button>
+            <button class="increaseVolume" data-audio="audio11">+</button>
+            <button class="decreaseVolume" data-audio="audio11">-</button>
+            <span class="playCount">Plays: 0</span>
+        </div>
+    </div>
+    
+    <script>
+        // Function to pause all audio elements
+        function pauseAllAudio() {
+            const audioElements = document.querySelectorAll("audio");
+            audioElements.forEach((audio) => {
+                audio.pause();
+            });
+        }
+
+        const playButtons = document.querySelectorAll(".play");
+        const pauseButtons = document.querySelectorAll(".pause");
+        const increaseVolumeButtons = document.querySelectorAll(".increaseVolume");
+        const decreaseVolumeButtons = document.querySelectorAll(".decreaseVolume");
+        const playCountElements = document.querySelectorAll(".playCount");
+
+        // Initialize play counts for each song
+        const playCounts = Array.from({ length: playButtons.length }, () => 0);
+
+        playButtons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                const audioId = button.getAttribute("data-audio");
+                const audioElement = document.getElementById(audioId);
+
+                // Update the play count and display
+                playCounts[index]++;
+                playCountElements[index].textContent = `Plays: ${playCounts[index]}`;
+
+                pauseAllAudio();
+                audioElement.play();
+            });
+        });
+
+        pauseButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const audioId = button.getAttribute("data-audio");
+                const audioElement = document.getElementById(audioId);
+                audioElement.pause();
+            });
+        });
+
+        increaseVolumeButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const audioId = button.getAttribute("data-audio");
+                const audioElement = document.getElementById(audioId);
+                if (audioElement.volume < 1.0) {
+                    audioElement.volume += 0.1;
+                }
+            });
+        });
+
+        decreaseVolumeButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const audioId = button.getAttribute("data-audio");
+                const audioElement = document.getElementById(audioId);
+                if (audioElement.volume > 0.0) {
+                    audioElement.volume -= 0.1;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
